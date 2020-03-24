@@ -1,0 +1,8 @@
+<h1><%=@post.title%></h1>
+<h2>Author: <%= link_to @post.post_blogger, blogger_path(post_blogger)%></h2>
+<h3>button_to "Do you like me?", edit_post_path(@post), method: :update </h3>
+
+@post.update(:likes)
+
+
+<%= button_to "Link name", model_path(model), method: :delete%>

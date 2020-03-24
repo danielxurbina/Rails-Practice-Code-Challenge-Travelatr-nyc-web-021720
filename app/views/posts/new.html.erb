@@ -1,0 +1,11 @@
+<h1>Create a new Post</h1>
+
+<%= form_for @post do |f|%>
+  Title: <%= f.text_field :title %>
+  Content: <%=f.text_area :content %>
+    <%= f.submit%>
+
+<% end %>
+# Users should be able to create and edit a post
+# Users should be able to select a blogger from a dropdown menu
+# Users should be able to select a destination from a dropdown menu
